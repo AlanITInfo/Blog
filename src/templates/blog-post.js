@@ -1,12 +1,14 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-
+import Share from "../components/sharebuttons/sharebuttons"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
+  const twitter = data.site.siteMetadata.social.twitter
+  const url = data.site.siteMetadata.siteUrl
   const { previous, next } = data
 
   return (
@@ -30,6 +32,16 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <hr />
         <footer>
+        <Share
+            socialConfig={{
+              twitter,
+              config: {
+                url: `${url}${post.frontmatter.slug}`,
+                title: post.frontmatter.title,
+              },
+            }}
+            tags={post.frontmatter.tags}
+          />
         </footer>
       </article>
       <nav className="blog-post-nav">
@@ -73,7 +85,11 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
+        siteUrl
+        social {
+          twitter
+        }
+      }  
     }
     markdownRemark(id: { eq: $id }) {
       id
@@ -83,6 +99,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

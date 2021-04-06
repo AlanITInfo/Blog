@@ -1,6 +1,7 @@
 ---
 title: Creating a incoming webhook connector in Microsoft Teams Channel
 date: "2021-03-18T09:40:32.169Z"
+tags: ["Microsoft", "Teams", Azure, ]
 ---
 
 1. Select the channel you what the connector to be attached to and click on the “…” menu and select “Connectors”

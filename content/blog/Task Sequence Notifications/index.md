@@ -1,6 +1,7 @@
 ---
 title: Sending SCCM Task Sequence Notifications to Teams
 date: "2021-03-26T15:30:32.169Z"
+tags: [Microsoft, Windows10, SCCM, Task Sequence, Teams]
 ---
 
 Quick blog post on how to send a notification about your Task Sequence to a teams channel, useful if you want to keep an eye on certain task sequences as a whole or just parts of the sequence.

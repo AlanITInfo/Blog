@@ -1,6 +1,7 @@
 ---
 title: Repairing trust between devices and domain from local device
 date: "2021-04-01T15:30:32.169Z"
+tags: [Microsoft, Windows10, AD, Domain Trust]
 ---
 
 Working with a customer and handful of there devices which had been powered off for a bit displayed the following information when a user attempted to logon.

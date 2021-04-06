@@ -1,6 +1,7 @@
 ---
 title: Its my new gatsbyjs blog
 date: "2021-03-17T10:46:37.121Z"
+tags: [javascript, gatsby]
 ---
 
 My new blogging site is up and running 

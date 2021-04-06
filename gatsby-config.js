@@ -3,6 +3,7 @@ module.exports = {
     title: `Alans IT Info Blog`,
     author: {
       name: `Alan Palmer`,
+      email: `PalmerAlanJobSeek@Gmail.com`,
       summary: `Blog site showcasing my skills and knowledge and helping fellow IT Techs.`,
     },
     description: `A blog demonstrating what I can do.`,
@@ -126,5 +127,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-sass`
   ],
 }

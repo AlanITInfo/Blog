@@ -1,6 +1,7 @@
 ---
 title: Change BookMark/TAB icon in your gatsby blog
 date: "2021-04-02T18:20:37.121Z"
+tags: [javascript, gatsby]
 ---
 
 Working with the gatsby-starter-blog and one of the first things most people change is the profile picture from the dashing Mark Matthews but I also wanted to change BookMark/TAB Icon from the gatsby logo to my logo.
