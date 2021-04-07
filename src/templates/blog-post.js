@@ -3,12 +3,14 @@ import { Link, graphql } from "gatsby"
 import Share from "../components/sharebuttons/sharebuttons"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Tags from "../components/tags"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const twitter = data.site.siteMetadata.social.twitter
   const url = data.site.siteMetadata.siteUrl
+  const tags = post.frontmatter.tags || []
   const { previous, next } = data
 
   return (
@@ -32,6 +34,7 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <hr />
         <footer>
+        <Tags listOfTags={tags} />
         <Share
             socialConfig={{
               twitter,
