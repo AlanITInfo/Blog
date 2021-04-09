@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import { Button } from 'reactstrap';
 import kebabCase from "lodash/kebabCase"
 
 const Tags = props => {
@@ -13,10 +13,10 @@ const Tags = props => {
   return (
 <p>
   <strong>
-  Blog Tags {props.listOfTags.map((tag, i) => [
-    i > 0 && ", ",
+  {props.listOfTags.map((tag, i) => [
+    i > 0 && " ",
     <Link to={`/tags/${kebabCase(tag)}/`} >
-    {tag}
+    <Button color="info">{tag}</Button>{' '}
     </Link>
   ])}
   </strong>
@@ -25,4 +25,3 @@ const Tags = props => {
 }
 
 export default Tags
-

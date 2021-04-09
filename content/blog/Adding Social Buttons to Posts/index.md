@@ -2,7 +2,7 @@
 title: Adding Social Buttons to Posts
 date: "2021-04-05T10:56:37.121Z"
 description: "How to show social sites sharing buttons on your Gatsby blog."
-tags: [javascript, gatsby]
+tags: ["javascript", "gatsby"]
 ---
 
 So I wanted to be able to share my blog with social sites ie.. twitter, linkdin etc.. and had a quick search via google and found some great sites that really helped put the bits of the puzzle together so shout outs to 

@@ -7,7 +7,7 @@ tags: ["javascript", "gatsby"]
 
 So one of the major things parts of my Gatsby blog is to get Tags displaying on blog pots after some searching via google I found some great sites that really helped so shout outs to 
 
-([Tarascodes](https://tarascodes.com/create-tags-component/)) and ([casperlehmann.com](https://casperlehmann.com/setting-up-tags-for-gatsby-pages//))
+([Tarascodes](https://tarascodes.com/create-tags-component/)) and ([casperlehmann.com](https://casperlehmann.com/setting-up-tags-for-gatsby-pages/))
 
 To start we need to create a tags component to handle the tags sorting and classification and style before sending back.
 
