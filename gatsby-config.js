@@ -10,6 +10,7 @@ module.exports = {
     siteUrl: `https://AlanItInfo.Page/`,
     social: {
       twitter: `AlanItInfos`,
+      linkedin: 'palmeralan'
     },
   },
   plugins: [
