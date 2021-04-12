@@ -31,7 +31,7 @@ class TagsTemplate extends React.Component {
             )
           })}
         </ul>
-        <Link to="/tags"><Button outline color="secondary">View all tags</Button>{' '}</Link>
+        <Link to="/tag"><Button outline color="secondary">View all tags</Button>{' '}</Link>
       </Layout>
     )
   }
