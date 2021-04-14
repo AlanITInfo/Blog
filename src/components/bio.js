@@ -40,16 +40,6 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={["AUTO", "WEBP", "AVIF"]}
-        src="../images/profile-pic.png"
-        width={150}
-        height={150}
-        quality={95}
-        alt="Profile picture"
-      />
       {author?.name && (
          <p>
          Written by <strong>{author.name}</strong> {author?.summary || null}
@@ -60,6 +50,9 @@ const Bio = () => {
          <StaticImage src="../images/microsoft-365-certified-modern-desktop-administrator-associate.png"></StaticImage>
          <StaticImage src="../images/microsoft-365-certified-enterprise-administrator-expert.png"></StaticImage>
          <br>
+         </br>
+          Please feel free to contact or follow me on one of the below channels.
+          <br>
          </br>
          <a href={`https://twitter.com/${social?.twitter || ``}`}>
          <TwitterIcon  size={45} round={true}/>

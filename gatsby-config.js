@@ -4,7 +4,7 @@ module.exports = {
     author: {
       name: `Alan Palmer`,
       email: `PalmerAlanJobSeek@Gmail.com`,
-      summary: `Blog site showcasing my skills and knowledge and helping fellow IT Techs.`,
+      summary: `Welcome to my blog site showcasing my skills and knowledge. My thoughts are my own and any information shown use at your own risk.`,
     },
     description: `A blog demonstrating what I can do.`,
     siteUrl: `https://AlanItInfo.Page/`,
