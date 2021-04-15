@@ -9,8 +9,8 @@ const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const twitter = data.site.siteMetadata.social.twitter
-  const url = data.site.siteMetadata.siteUrl
-  const tags = post.frontmatter.tags || []
+  const shareUrl = location.href
+  const tags = post.frontmatter.tags || [] 
   const { previous, next } = data
 
   return (
@@ -39,7 +39,7 @@ const BlogPostTemplate = ({ data, location }) => {
             socialConfig={{
               twitter,
               config: {
-                url: `${url}${post.frontmatter.slug}`,
+                url: `${shareUrl}`,
                 title: post.frontmatter.title,
               },
             }}
